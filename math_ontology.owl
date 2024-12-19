@@ -1,0 +1,834 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/abhee/ontologies/2024/11/math-ontology-owl"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/abhee/ontologies/2024/11/math-ontology-owl">
+    <Prefix name="" IRI="http://www.semanticweb.org/abhee/ontologies/2024/11/math-ontology-owl"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#Addition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Circle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CircleFormula"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cube"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CubeFormula"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Division"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Formula"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Multiplication"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Operation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pyramid"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PyramidFormula"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Rectangle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RectangleFormula"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Shape"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Square"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SquareFormula"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Subtraction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Triangle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TriangleFormula"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasFormula"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#useOperation"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasBase"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasBaseLength"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasEdgeLength"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasLength"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasPyramidHeight"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasRadius"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasSideLength"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasTriangleHeight"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasWidth"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Addition_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Circle_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Circle_AreaFormula"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Cube_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Cube_SurfaceAreaFormula"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Division_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Multiplication_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Pyramid_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Pyramid_AreaFormula"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Rectangle_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Rectangle_AreaFormula"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Rectangle_PerimeterFormula"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Square_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Square_AreaFormula"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Square_PerimeterFormula"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Subtraction_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Triangle_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Triangle_AreaFormula"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Triangle_PerimeterFormula"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#Circle"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Shape"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasFormula"/>
+                <Class IRI="#CircleFormula"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Cube"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Shape"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasFormula"/>
+                <Class IRI="#CubeFormula"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Pyramid"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Shape"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasFormula"/>
+                <Class IRI="#PyramidFormula"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Rectangle"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Shape"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasFormula"/>
+                <Class IRI="#RectangleFormula"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Square"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Shape"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasFormula"/>
+                <Class IRI="#SquareFormula"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Triangle"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Shape"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasFormula"/>
+                <Class IRI="#TriangleFormula"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="#Addition"/>
+        <Class IRI="#Operation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Circle"/>
+        <Class IRI="#Shape"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Circle"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#hasRadius"/>
+            <Datatype abbreviatedIRI="xsd:float"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CircleFormula"/>
+        <Class IRI="#Formula"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cube"/>
+        <Class IRI="#Shape"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cube"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#hasEdgeLength"/>
+            <Datatype abbreviatedIRI="xsd:float"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CubeFormula"/>
+        <Class IRI="#Formula"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Division"/>
+        <Class IRI="#Operation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Multiplication"/>
+        <Class IRI="#Operation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pyramid"/>
+        <Class IRI="#Shape"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pyramid"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#hasBaseLength"/>
+            <Datatype abbreviatedIRI="xsd:float"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pyramid"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#hasPyramidHeight"/>
+            <Datatype abbreviatedIRI="xsd:float"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PyramidFormula"/>
+        <Class IRI="#Formula"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Rectangle"/>
+        <Class IRI="#Shape"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Rectangle"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#hasLength"/>
+            <Datatype abbreviatedIRI="xsd:float"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Rectangle"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#hasWidth"/>
+            <Datatype abbreviatedIRI="xsd:float"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RectangleFormula"/>
+        <Class IRI="#Formula"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Square"/>
+        <Class IRI="#Shape"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Square"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#hasSideLength"/>
+            <Datatype abbreviatedIRI="xsd:float"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SquareFormula"/>
+        <Class IRI="#Formula"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Subtraction"/>
+        <Class IRI="#Operation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Triangle"/>
+        <Class IRI="#Shape"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Triangle"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#hasBase"/>
+            <Datatype abbreviatedIRI="xsd:float"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Triangle"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#hasTriangleHeight"/>
+            <Datatype abbreviatedIRI="xsd:float"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TriangleFormula"/>
+        <Class IRI="#Formula"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#Addition"/>
+        <Class IRI="#Division"/>
+        <Class IRI="#Multiplication"/>
+        <Class IRI="#Subtraction"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Operation"/>
+        <Class IRI="#Shape"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#Addition"/>
+        <NamedIndividual IRI="#Addition_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Circle"/>
+        <NamedIndividual IRI="#Circle_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Circle"/>
+        <NamedIndividual IRI="#Circle_AreaFormula"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CircleFormula"/>
+        <NamedIndividual IRI="#Circle_AreaFormula"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Cube"/>
+        <NamedIndividual IRI="#Cube_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Cube"/>
+        <NamedIndividual IRI="#Cube_SurfaceAreaFormula"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CubeFormula"/>
+        <NamedIndividual IRI="#Cube_SurfaceAreaFormula"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Division"/>
+        <NamedIndividual IRI="#Division_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Multiplication"/>
+        <NamedIndividual IRI="#Multiplication_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Pyramid"/>
+        <NamedIndividual IRI="#Pyramid_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Pyramid"/>
+        <NamedIndividual IRI="#Pyramid_AreaFormula"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PyramidFormula"/>
+        <NamedIndividual IRI="#Pyramid_AreaFormula"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Rectangle"/>
+        <NamedIndividual IRI="#Rectangle_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Rectangle"/>
+        <NamedIndividual IRI="#Rectangle_AreaFormula"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#RectangleFormula"/>
+        <NamedIndividual IRI="#Rectangle_AreaFormula"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Rectangle"/>
+        <NamedIndividual IRI="#Rectangle_PerimeterFormula"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#RectangleFormula"/>
+        <NamedIndividual IRI="#Rectangle_PerimeterFormula"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Square"/>
+        <NamedIndividual IRI="#Square_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Square"/>
+        <NamedIndividual IRI="#Square_AreaFormula"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SquareFormula"/>
+        <NamedIndividual IRI="#Square_AreaFormula"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Square"/>
+        <NamedIndividual IRI="#Square_PerimeterFormula"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SquareFormula"/>
+        <NamedIndividual IRI="#Square_PerimeterFormula"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasFormula"/>
+            <Class IRI="#SquareFormula"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#Square_PerimeterFormula"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Subtraction"/>
+        <NamedIndividual IRI="#Subtraction_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Triangle"/>
+        <NamedIndividual IRI="#Triangle_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Triangle"/>
+        <NamedIndividual IRI="#Triangle_AreaFormula"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TriangleFormula"/>
+        <NamedIndividual IRI="#Triangle_AreaFormula"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Triangle"/>
+        <NamedIndividual IRI="#Triangle_PerimeterFormula"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TriangleFormula"/>
+        <NamedIndividual IRI="#Triangle_PerimeterFormula"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasFormula"/>
+        <NamedIndividual IRI="#Circle_1"/>
+        <NamedIndividual IRI="#Circle_AreaFormula"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#useOperation"/>
+        <NamedIndividual IRI="#Circle_AreaFormula"/>
+        <NamedIndividual IRI="#Multiplication_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasFormula"/>
+        <NamedIndividual IRI="#Cube_1"/>
+        <NamedIndividual IRI="#Cube_SurfaceAreaFormula"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#useOperation"/>
+        <NamedIndividual IRI="#Cube_SurfaceAreaFormula"/>
+        <NamedIndividual IRI="#Multiplication_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasFormula"/>
+        <NamedIndividual IRI="#Pyramid_1"/>
+        <NamedIndividual IRI="#Pyramid_AreaFormula"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#useOperation"/>
+        <NamedIndividual IRI="#Pyramid_AreaFormula"/>
+        <NamedIndividual IRI="#Multiplication_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasFormula"/>
+        <NamedIndividual IRI="#Rectangle_1"/>
+        <NamedIndividual IRI="#Rectangle_AreaFormula"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#useOperation"/>
+        <NamedIndividual IRI="#Rectangle_AreaFormula"/>
+        <NamedIndividual IRI="#Multiplication_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#useOperation"/>
+        <NamedIndividual IRI="#Rectangle_PerimeterFormula"/>
+        <NamedIndividual IRI="#Addition_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasFormula"/>
+        <NamedIndividual IRI="#Square_1"/>
+        <NamedIndividual IRI="#Square_AreaFormula"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#useOperation"/>
+        <NamedIndividual IRI="#Square_AreaFormula"/>
+        <NamedIndividual IRI="#Multiplication_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#useOperation"/>
+        <NamedIndividual IRI="#Square_PerimeterFormula"/>
+        <NamedIndividual IRI="#Multiplication_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasFormula"/>
+        <NamedIndividual IRI="#Triangle_1"/>
+        <NamedIndividual IRI="#Triangle_AreaFormula"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#useOperation"/>
+        <NamedIndividual IRI="#Triangle_AreaFormula"/>
+        <NamedIndividual IRI="#Multiplication_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#useOperation"/>
+        <NamedIndividual IRI="#Triangle_PerimeterFormula"/>
+        <NamedIndividual IRI="#Addition_1"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasRadius"/>
+        <NamedIndividual IRI="#Circle_1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">5.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasEdgeLength"/>
+        <NamedIndividual IRI="#Cube_1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">3.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasBaseLength"/>
+        <NamedIndividual IRI="#Pyramid_1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">5.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPyramidHeight"/>
+        <NamedIndividual IRI="#Pyramid_1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">10.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasLength"/>
+        <NamedIndividual IRI="#Rectangle_1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">10.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasWidth"/>
+        <NamedIndividual IRI="#Rectangle_1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">5.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasSideLength"/>
+        <NamedIndividual IRI="#Square_1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">4.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasBase"/>
+        <NamedIndividual IRI="#Triangle_1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">6.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasTriangleHeight"/>
+        <NamedIndividual IRI="#Triangle_1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">8.0</Literal>
+    </DataPropertyAssertion>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasFormula"/>
+        <Class IRI="#Shape"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasFormula"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasFormula"/>
+            <Class IRI="#Circle"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasFormula"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasFormula"/>
+            <Class IRI="#Cube"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasFormula"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasFormula"/>
+            <Class IRI="#Pyramid"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasFormula"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasFormula"/>
+            <Class IRI="#Rectangle"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasFormula"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasFormula"/>
+            <Class IRI="#Square"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasFormula"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasFormula"/>
+            <Class IRI="#Triangle"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#useOperation"/>
+        <Class IRI="#Formula"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasFormula"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasFormula"/>
+            <Class IRI="#Formula"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#useOperation"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#useOperation"/>
+            <Class IRI="#Operation"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasBase"/>
+        <Class IRI="#Triangle"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasBaseLength"/>
+        <Class IRI="#Pyramid"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasEdgeLength"/>
+        <Class IRI="#Cube"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasLength"/>
+        <Class IRI="#Rectangle"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasPyramidHeight"/>
+        <Class IRI="#Pyramid"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasRadius"/>
+        <Class IRI="#Circle"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasSideLength"/>
+        <Class IRI="#Square"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasTriangleHeight"/>
+        <Class IRI="#Triangle"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasWidth"/>
+        <Class IRI="#Rectangle"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasBase"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasBaseLength"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasEdgeLength"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasLength"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasPyramidHeight"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasRadius"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasSideLength"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasTriangleHeight"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasWidth"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Circle_AreaFormula</IRI>
+        <Literal>Area of a circle</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Circle_AreaFormula</IRI>
+        <Literal>π × radius × radius</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Cube_SurfaceAreaFormula</IRI>
+        <Literal>Surface area of a cube</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Cube_SurfaceAreaFormula</IRI>
+        <Literal>6 × side × side</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Pyramid_AreaFormula</IRI>
+        <Literal>Area of a Pyramid</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Pyramid_AreaFormula</IRI>
+        <Literal>1/3 × base area × height</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Rectangle_AreaFormula</IRI>
+        <Literal>Area of a rectangle</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Rectangle_AreaFormula</IRI>
+        <Literal>length × width</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Rectangle_PerimeterFormula</IRI>
+        <Literal>Perimeter formula for rectangle</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Rectangle_PerimeterFormula</IRI>
+        <Literal>2 × (length + width)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Square_AreaFormula</IRI>
+        <Literal>Area of a square</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Square_AreaFormula</IRI>
+        <Literal>side × side</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Square_PerimeterFormula</IRI>
+        <Literal>Perimeter of a square</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Square_PerimeterFormula</IRI>
+        <Literal>4 × side</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Triangle_AreaFormula</IRI>
+        <Literal>Area formula for Triangle</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Triangle_AreaFormula</IRI>
+        <Literal>0.5 × base × height</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Triangle_PerimeterFormula</IRI>
+        <Literal>Perimeter formula for triangle</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Triangle_PerimeterFormula</IRI>
+        <Literal>base + side1 + side2</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#useOperation</IRI>
+        <Literal>Relates a shape or formula to a specific operation</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
